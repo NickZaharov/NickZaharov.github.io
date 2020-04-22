@@ -93,11 +93,11 @@ hr{
 /* fixed tab  */
 .fixed-tab{
     position: fixed;
-    width: 6%;
+    width: 7%;
     margin: 2%;
     right: 0;
     
-    background: rgba(150, 160, 170, 0.5);
+    background: rgba(150, 160, 170, .4);
     border-radius: 2vh;
 }
 
@@ -291,6 +291,9 @@ hr{
     .desc__content{
         width: 46%;
     }
+    .fixed-tab{
+        width: 10%;
+    }
 }
 
 @media (max-width: 540px) {
@@ -305,6 +308,9 @@ hr{
     }
     .desc__content{
         width: 100%;
+    }
+    .fixed-tab{
+        width: 15%;
     }
 }
 
