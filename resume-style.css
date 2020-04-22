@@ -286,7 +286,7 @@ hr{
 
 @media (max-width: 767px) {
     .container{
-        padding: 0 10px;
+        padding: 0 15px;
     }
     html{
         font-size: 18px;
@@ -304,7 +304,7 @@ hr{
 
 @media (max-width: 540px) {
     .container{
-        padding: 0 5px;
+        padding: 0 10px;
     }
     html{
         font-size: 14px;
