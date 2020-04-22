@@ -1,0 +1,310 @@
+html{
+    font-size: 24px;
+}
+
+body{
+    margin: 0;
+    font-family: BlinkMacSystemFont,"Segoe UI", sans-serif;
+    font-weight: 600;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+hr{
+    background: rgba(120,120,120,0.3);
+    height: 2px;
+    border: none;
+    margin: 0;
+}
+
+
+/* Intro */
+.intro{
+    width: 100%;
+    background: url(back-intro.jpg) center no-repeat;
+    background-size: cover; 
+}
+
+.intro__mask{
+    width: 100%;
+    background: rgba(245,243,245,0.7);
+}
+
+.intro__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.photo__inner{
+    width: 30%;
+    min-width: 180px;
+    max-width: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+    box-shadow: 0px 0px 0px 10px white;  
+    position: relative;
+}
+
+.photo__inner::before{    
+    content: "";
+    display: block;
+    padding-top: 100%; 
+}
+
+.intro__photo{
+    position: absolute;
+    left: 0;
+    top: -18%;
+    width: 100%;
+}
+
+.intro__contacts{
+    margin: auto 0;
+    text-align: left;
+    margin-left: 10%;
+    
+    color: rgb(110,110,110);
+}
+
+
+
+/* fixed tab  */
+.fixed-tab{
+    position: fixed;
+    width: 6%;
+    margin: 2%;
+    right: 0;
+    
+    background: rgba(150, 160, 170, 0.5);
+    border-radius: 2vh;
+}
+
+.contact{
+    display: block;
+    margin: 0 4%; 
+    cursor: pointer;
+    opacity: 90%;
+    transition: .1s linear;
+}
+
+.contact:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+/*  Education */
+.education{
+    position: relative;
+}
+
+.education__title{
+    position: absolute;
+    top: -7%;
+
+    font-size: 1.8rem;
+}
+
+.education__content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+.education__img{
+    width: 30%;
+    max-width: 220px;
+    min-width: 150px;
+    height: auto;
+    opacity: 80%;
+    
+}
+
+.education__info{
+    color: rgb(110,110,110);
+    margin: auto 3rem;
+    color: liner-gradient
+}
+
+.info__title{
+    font-size: 1.6rem;
+}
+
+.info__year{
+    font-weight: 400;
+}
+
+
+
+/* Skills */
+.skills{
+    background: url(back-skills.jpg) center no-repeat;
+    background-size: 100%; 
+}
+
+.skills__title{
+    position: absolute;
+    font-size: 1.8rem;
+    top: -11%;
+    right: 0;
+}
+
+.skills__mask{
+    background:rgba(190,195,195,0.7);
+}
+
+.skills__content{
+    position: relative;
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.skills span{
+    display:inline-block;
+    font-size: 0.8rem;
+    padding: 1%;
+    margin: 1%;
+    width: auto;
+    height: auto;
+    opacity:80%;
+    border-radius: 20vh;
+}
+
+.skills span:nth-child(4n+1){
+    background: #938AFF;
+}
+
+.skills span:nth-child(4n+2){
+    background: #FF7797;
+}
+
+.skills span:nth-child(4n+3){
+    background: #FFE077;
+}
+
+.skills span:nth-child(4n+4){
+    background: #84FF77;
+}
+
+
+
+/* Descrition */
+.desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 1rem; 
+    
+    color: rgb(110,110,110);
+}
+
+.desc__header{
+    position: relative;
+    width: 100%;
+    padding-bottom: 1rem; 
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.desc__header::after{
+    position: absolute;
+    margin-left: 40%;
+    top: 100%;
+    display: block;
+    content: "";
+    background: #FFF800;
+    width: 20%;
+    height: 15%;
+    border-radius: 20vh;
+} 
+
+.desc__body{
+    padding: 5%;
+    text-align: center;
+}
+
+.desc img{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.desc__content{
+    width: 30%;
+    max-width: 600px;
+    margin: 0.5rem;
+    padding-top: .5rem;
+    
+    border-radius: 20px;
+    box-shadow:0px 2px 5px rgb(123,123,123);
+}
+
+/* Media */
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+    html{
+        font-size: 20px;
+    }
+    .desc__content{
+        width: 46%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        padding: 0 10px;
+    }
+    html{
+        font-size: 18px;
+    }
+    .desc__content{
+        width: 46%;
+    }
+}
+
+@media (max-width: 540px) {
+    .container{
+        padding: 0 5px;
+    }
+    html{
+        font-size: 14px;
+    }
+    .photo__inner{
+        margin-bottom: 20px;
+    }
+    .desc__content{
+        width: 100%;
+    }
+}
+
