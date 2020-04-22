@@ -121,7 +121,7 @@ hr{
 
 .education__title{
     position: absolute;
-    top: -7%;
+    top: -8%;
 
     font-size: 1.8rem;
 }
@@ -279,6 +279,9 @@ hr{
     .desc__content{
         width: 46%;
     }
+    .education__title{
+        top: -6%; 
+    }
 }
 
 @media (max-width: 767px) {
@@ -293,6 +296,9 @@ hr{
     }
     .fixed-tab{
         width: 10%;
+    }
+    .education__title{
+        top: -6%; 
     }
 }
 
@@ -311,6 +317,9 @@ hr{
     }
     .fixed-tab{
         width: 15%;
+    }
+    .education__title{
+        top: -6%; 
     }
 }
 
