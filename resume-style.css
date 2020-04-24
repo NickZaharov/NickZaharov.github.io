@@ -92,6 +92,7 @@ hr{
 
 /* fixed tab  */
 .fixed-tab{
+    display: block;
     position: fixed;
     width: 7%;
     margin: 2%;
@@ -284,6 +285,9 @@ hr{
     .education__title{
         top: -6%; 
     }
+    .fixed-tab{
+        width: 9%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -297,7 +301,7 @@ hr{
         width: 46%;
     }
     .fixed-tab{
-        width: 10%;
+        width: 12%;
     }
     .education__title{
         top: -5%; 
