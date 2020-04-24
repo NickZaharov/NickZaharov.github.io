@@ -93,6 +93,7 @@ hr{
 /* fixed tab  */
 .fixed-tab{
     position: fixed;
+    z-index: 100;
     width: 7%;
     margin: 2%;
     right: 0;
