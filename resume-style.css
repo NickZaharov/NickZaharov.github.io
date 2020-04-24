@@ -106,7 +106,10 @@ hr{
     margin: 0 4%; 
     cursor: pointer;
     opacity: 90%;
-    transition: .1s linear;
+    transition: all .1s linear;
+    -moz-transition: all .1s linear;
+	-webkit-transition: all .1s linear;
+	-o-transition: all .1s linear;
 }
 
 .contact:hover{
