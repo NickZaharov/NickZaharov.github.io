@@ -279,7 +279,7 @@ hr{
         padding: 0 2rem;
     }
     html{
-        font-size: 20px;
+        font-size: 14px;
     }
     .desc__content{
         width: 46%;
@@ -292,12 +292,12 @@ hr{
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
     .container{
         padding: 0 15px;
     }
     html{
-        font-size: 18px;
+        font-size: 14px;
     }
     .desc__content{
         width: 46%;
