@@ -1,5 +1,5 @@
 html{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 body{
@@ -300,7 +300,7 @@ hr{
         font-size: 15px;
     }
     .desc__content{
-        width: 46%;
+        width: 100%;
     }
     .fixed-tab{
         width: 12%;
